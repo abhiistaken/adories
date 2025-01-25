@@ -7,7 +7,6 @@
 body{
    background-color: pink;
    background-image: url(il_1080xN.4171085007_juv5.webp);
-   background-blend-mode:luminosity;
    background-size: cover;
 }
 
