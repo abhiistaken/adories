@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bowdiv"><img class="bow" src="pngtree-watercolor-pink-bow-illustration-clipart-png-image_10091848.png"></div>
+    <div class="btn-div">
+    <button class="reveal" onclick="present()" id="btn">?</button>
+</div>
+<div class="eyes" id="eyes">
+    <img src="f7d7b6d9-b217-46a5-829a-ffc8dde0f7a6.jpg" alt="">
+    <h1>Your eyes</h1>
+</div>
+
+<div class="btn-div2" id="btn-div2">
+    <button class="reveal" onclick="present2()" id="btn2">?</button>
+</div>
+<div class="eyes2" id="eyes2">
+    <img src="9c4db5ef-0f72-490b-a80e-8c9e77ef14aa.JPG" alt="">
+    <h1>Your smile</h1>
+</div>
+<div class="btn-div3" id="btn-div3">
+    <button class="reveal" onclick="present3()" id="btn3">?</button>
+</div>
+<div class="eyes3" id="eyes3">
+    <img src="PHOTO-2025-01-05-00-34-58.jpg" alt="">
+    <h1>Your hair</h1>
+</div>
+
+<div class="btn-div4" id="btn-div4">
+    <button class="reveal" onclick="present4()" id="btn4">?</button>
+</div>
+<div class="eyes4" id="eyes4">
+    <img src="IMG_7776 (1).jpg" alt="">
+    <h1>Your cheeks</h1>
+</div>
+<h1 class="lasttext" id="last">and every part of you, i'll adore forever</h1>
+<script>
+    function present(){
+       document.getElementById("eyes").style.display="block";
+       document.getElementById("btn").style.display="none";
+       document.getElementById("btn-div2").style.display="block";
+    }
+
+    function present2(){
+        document.getElementById("btn2").style.display="none";
+        document.getElementById("eyes2").style.display="block";
+        document.getElementById("btn-div3").style.display="block";
+        document.getElementById("eyes").style.animationPlayState="paused";
+    }
+    function present3(){
+        document.getElementById("btn3").style.display="none";
+        document.getElementById("eyes3").style.display="block";
+        document.getElementById("eyes2").style.animationPlayState="paused";
+        document.getElementById("btn-div4").style.display="block";
+    }
+    function present4(){
+        document.getElementById("btn4").style.display="none";
+        document.getElementById("eyes4").style.display="block";
+        document.getElementById("eyes3").style.animationPlayState="paused";
+        document.getElementById("last").style.display="block";
+    }
+</script>
+</body>
+</html>

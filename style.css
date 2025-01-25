@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Todhri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: pink;
+   background-image: url(il_1080xN.4171085007_juv5.webp);
+   background-blend-mode:luminosity;
+   background-size: cover;
+}
+
+@keyframes hovie {
+    50%{
+        margin-top: 10%;
+    }
+    100%{
+        margin-top: 5%;
+    }
+}
+
+img{
+    width:350px;
+    height:130px;
+    border-radius: 5px;
+}
+
+.reveal{
+    text-align: center;
+    height:75px;
+    width:75px;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(220, 150, 162);
+    font-size: 1.5em;
+    margin-top: 5%;
+    font-family: "Noto Serif Todhri", serif;
+    font-weight: 400;
+    font-style: normal;
+    opacity: .5;
+    animation: infinite 6s 0.5s hovie;
+}
+/*FROM THIS EDIT WALA PART OKIE OKIE*/
+.btn-div,.btn-div2,.btn-div3,.btn-div4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-div2,.btn-div3,.btn-div4{
+    display: none;
+}
+
+.eyes,.eyes2,.eyes3,.eyes4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    display: none;
+    text-align: center;
+    animation: infinite 6.7s 0.5s hovie;
+}
+
+.btn-div2,.btn-div3,.btn-div4{
+    text-align: center;
+}
+
+.eyes2 img{
+    object-fit: cover;
+}
+
+.eyes3 img{
+    object-fit: cover;
+}
+.eyes4 img{
+    object-fit: cover;
+}
+
+.bow{
+    width:260px ;
+    height: 200px;
+    opacity: 1;
+}
+
+.bowdiv{
+    display: flex;
+    justify-content: center;
+}
+
+.lasttext{
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    display: none;
+}
